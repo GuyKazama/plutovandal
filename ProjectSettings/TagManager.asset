@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - taggable surface
+  - paint_white
+  - paint_red
+  - paint_green
+  - paint_blue
+  - paint_black
   layers:
   - Default
   - TransparentFX
