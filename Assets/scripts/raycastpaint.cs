@@ -4,10 +4,8 @@ public class raycastpaint : MonoBehaviour
 {
     public GameObject Paint;
     public GameObject Spraycan;
-    
-    
-    
-    // See Order of Execution for Event Functions for information on FixedUpdate() and Update() related to physics queries
+ 
+
     void Update()
     {
         if (Input.GetKey("e"))
@@ -28,5 +26,10 @@ public class raycastpaint : MonoBehaviour
                 }
             }
         }
+
+      //  if ()
+       // {
+       //
+       // }
     }
 }
