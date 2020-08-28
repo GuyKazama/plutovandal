@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,6 +12,7 @@ public class DialogueTrigger : MonoBehaviour
     private Queue<string> sentences;
     private Text text;
     public Canvas canvas;
+     
 
     //public void TriggerDialogue ()
     //{
@@ -100,6 +103,10 @@ public class DialogueTrigger : MonoBehaviour
 
             }
         }
+
+        
+            
+         
         //else
         //{
         //    DisplayNextSentence();
@@ -111,4 +118,5 @@ public class DialogueTrigger : MonoBehaviour
         //    DisplayNextSentence();
         //}
     }
+
 }
