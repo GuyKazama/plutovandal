@@ -52,7 +52,7 @@ public class raycastpaint : MonoBehaviour
         }
 
 
-        if (Input.GetKey("e"))
+        if (Input.GetMouseButton(0))
         {
             //spray.SetActive(true);
             //ray out from the position of the mouse on the screen
