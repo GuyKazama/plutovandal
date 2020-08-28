@@ -51,11 +51,11 @@ public class SC_FPSController : MonoBehaviour
         float curSpeedY = canMove ? (isRunning ? runningSpeed : walkingSpeed) * Input.GetAxis("Horizontal") : 0;
         float movementDirectionY = moveDirection.y;
         moveDirection = (forward * curSpeedX) + (right * curSpeedY);
-        if (Input.GetButton("Jump") )
+        if (Input.GetKey("e") )
         {
             moveDirection.y = jumpSpeed;
         }
-        if (Input.GetKey("left shift"))
+        if (Input.GetKey("q"))
         {
             moveDirection.y = fallspeed;
         }

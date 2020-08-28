@@ -14,11 +14,11 @@ public class spray_blue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("e"))
+        if (Input.GetMouseButtonDown(0))
         {
             spray.SetActive(true);
         }
-        if (Input.GetKeyUp("e"))
+        if (Input.GetMouseButtonUp(0))
         {
             spray.SetActive(false);
         }
