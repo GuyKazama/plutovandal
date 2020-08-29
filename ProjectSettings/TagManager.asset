@@ -10,6 +10,7 @@ TagManager:
   - paint_green
   - paint_blue
   - paint_black
+  - npc
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - 
   - 
   - post process
-  - 
+  - UM_Layer
   - 
   - 
   - 
