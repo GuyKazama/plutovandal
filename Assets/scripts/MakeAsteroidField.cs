@@ -6,16 +6,16 @@ public class MakeAsteroidField : MonoBehaviour
 {
     public GameObject asteroid;
     public int numberOfAsteroids = 200;
-    public Vector3 range;
-    public float holeRadius;
+    public Vector3 range = new Vector3(10,10,10);
+    public float holeRadius = 0;
     public bool maintainAspectRatio = false;
-    public Vector3 minScale;
-    public Vector3 sizeVariance;
-    public Vector3 rotationVariance;
-    public bool drift;
+    public Vector3 minScale = new Vector3(0.5f,0.5f,0.5f);
+    public Vector3 sizeVariance = Vector3.zero;
+    public Vector3 rotationVariance = new Vector3(180,180,180);
+    public bool drift = true;
     public float driftStrength = 1.0f;
     public float rotationDriftStrength = 1.0f;
-    public float flatness;
+    public float flatness = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -54,11 +54,5 @@ public class MakeAsteroidField : MonoBehaviour
                 go.GetComponent<Rigidbody>().AddTorque(Random.insideUnitSphere * rotationDriftStrength);
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
