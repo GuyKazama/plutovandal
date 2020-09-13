@@ -48,7 +48,7 @@ MonoBehaviour:
   debrisNumber: 10
   debris: {fileID: 3138405324356091091, guid: 151728f452e11c94b95a228054fc9c3c, type: 3}
   explosionForce: 5
-  upfactor: 50
+  upfactor: 1
   debrisScale: 1
   explode: {fileID: 0}
 --- !u!198 &6302376543769033951

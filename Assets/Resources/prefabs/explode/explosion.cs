@@ -16,7 +16,7 @@ public class explosion : MonoBehaviour
         for (int i = 0; i < debrisNumber; i++)
         {
             GameObject go = Instantiate(debris) as GameObject;
-            go.GetComponent<Rigidbody>().velocity = (Random.insideUnitSphere * explosionForce) + (Vector3.up * upfactor);
+            go.GetComponent<Rigidbody>().velocity = (Random.insideUnitSphere * explosionForce); //+ (Vector3.up * upfactor);
             go.transform.position = transform.position;
             go.transform.parent = transform;
             go.transform.localScale = (Random.Range(0, debrisScale) * Vector3.one);
