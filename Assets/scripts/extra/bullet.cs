@@ -22,7 +22,8 @@ public class bullet: MonoBehaviour
             //The Bullet instantiation happens here.
             GameObject Temporary_Bullet_Handler;
             Temporary_Bullet_Handler = Instantiate(mBullet, gun.transform.position, gun.transform.rotation) as GameObject;
-
+            transform.position = transform.position;
+            transform.parent = transform;
             //Sometimes bullets may appear rotated incorrectly due to the way its pivot was set from the original modeling package.
             //This is EASILY corrected here, you might have to rotate it from a different axis and or angle based on your particular mesh.
             Temporary_Bullet_Handler.transform.Rotate(Vector3.left * 10);
